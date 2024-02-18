@@ -1,0 +1,47 @@
+site_name: Víctor Navarro Aránguiz
+#repo_name: Vokturz/vokturz.github.io
+#edit_uri: https://github.com/Vokturz/vokturz.github.io/edit/main/docs/
+theme:
+  # features:
+  #     - content.action.edit
+  #     - content.action.view
+  # icon:
+  #   edit: material/pencil 
+  #   view: material/eye
+    
+  logo: images/logo.png
+  favicon: images/logo.png
+
+  name: material
+  palette:
+    - scheme: default
+      primary: cyan
+      toggle:
+        icon: material/brightness-7 
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - scheme: slate
+      primary: cyan
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+  features:
+    - navigation.tabs
+
+nav:
+    - About me: "index.md"
+    - Blog: "blog/index.md"
+    - Projects: "projects/index.md"
+    - Github: "https://github.com/Vokturz"
+plugins:
+  - blog
+  - search
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+
+extra_css:
+  - stylesheets/extra.css
